@@ -43,7 +43,7 @@ class PopularMoviesRepository @Inject constructor(
     }
 
     companion object {
-        const val API_KEY = "4c3c151f9d82b5ef78535759ec6cee88"
+        const val API_KEY = "<API_KEY_RECEIVED_FROM_TMDB>"
     }
 
     fun clear() {
