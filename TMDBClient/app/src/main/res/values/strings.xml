@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">TMDBClient</string>
-    <string name="action_settings">Settings</string>
-    <string name="search_hint">Movie Name</string>
-</resources>
