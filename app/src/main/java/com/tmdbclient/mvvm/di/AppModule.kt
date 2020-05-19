@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.room.Room
 import com.tmdbclient.mvvm.App
 import com.tmdbclient.mvvm.Constants.BASE_URL
+import com.tmdbclient.mvvm.Constants.TC_BLOG_BASE_URL
 import com.tmdbclient.mvvm.room.AppDatabase
 import dagger.Module
 import dagger.Provides
@@ -21,7 +22,7 @@ class AppModule {
     @Provides
     fun provideRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(BASE_URL)
+            .baseUrl(TC_BLOG_BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build()
